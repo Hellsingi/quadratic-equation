@@ -9,6 +9,8 @@ module.exports = function solveEquation(equation) {
     var first=(-b+d)/(2*a);
     var second=(-b-d)/(2*a);
   }
+  first=Math.round(first);
+  second=Math.round(second);
 var res = [first,second];
 res.sort((first, second) => first - second);
 return res;  
